@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="CSS Character Animation">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>CSS Character Animation</title>
+
+  
+
+    
+    
+    <style>
+        
+        body{ overflow:hidden;}
+    
+                
+
+
+p.fallingletters {font-size: 35px; position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); }
+
+p.fallingletters span {
+transform: translateY(-50px);
+ display:block; float:left;
+   position:relative;
+ 
+  
+}
+p.fallingletters span:nth-child(n) 
+{
+     animation-name:fallingletter;
+  animation-duration: 3s;
+  animation-iteration-count:1;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  opacity:0;
+  animation-fill-mode: forwards;
+  }
+
+  /*drop*/
+    p.fallingletters > span:nth-child(1) {animation-delay: 1s;}
+  p.fallingletters > span:nth-child(2) {animation-delay: 1.2s;}
+   p.fallingletters > span:nth-child(3) {animation-delay: 1.5s;}
+    p.fallingletters > span:nth-child(4) {animation-delay: 1.7s; margin-right:8px;}
+    
+      /*in*/
+       p.fallingletters > span:nth-child(5) {animation-delay: 1.9s;}
+      p.fallingletters > span:nth-child(6) {animation-delay: 2.1s;margin-right:8px;}
+      
+     /*by*/
+    p.fallingletters > span:nth-child(7) {animation-delay: 2.3s;}
+     p.fallingletters > span:nth-child(8) {animation-delay: 2.5s;margin-right:8px;}
+     
+      /*character*/
+        p.fallingletters > span:nth-child(9) {animation-delay: 2.7s;}
+         p.fallingletters > span:nth-child(10) {animation-delay: 2.9s;}
+         p.fallingletters > span:nth-child(11) {animation-delay: 3.1s;}
+   p.fallingletters > span:nth-child(12) {animation-delay: 3.2s;}
+    p.fallingletters > span:nth-child(13) {animation-delay: 3.4s;}
+     p.fallingletters > span:nth-child(14) {animation-delay: 3.6s;}
+      p.fallingletters > span:nth-child(15) {animation-delay: 3.8s;}
+    p.fallingletters > span:nth-child(16) {animation-delay: 4.0s;}
+     p.fallingletters > span:nth-child(17) {animation-delay: 4.2s;}
+     
+ @keyframes fallingletter 
+            {
+                0%{transform: translateY(-200%);}
+              
+                100%{ transform: translateY(0%);opacity:1;}
+                
+                }
+  
+    </style>
+
+  </head>
+
+  <body>
+
+    
+
+
+      <div class="">
+            
+       <p class="fallingletters">
+      
+
+       <span>D</span>
+        <span>r</span>
+        <span>o</span>
+        <span>p</span>
+        <span>i</span>
+             <span>n</span>
+         <span>b</span>
+          <span>y </span>
+       
+          <span>c</span>
+        <span>h</span>
+        <span>a</span>
+        <span>r</span>
+        <span>a</span>
+             <span>c</span>
+         <span>t</span>
+        <span>e</span>
+          <span>r</span>
+   
+      
+       
+       </p>
+        
+      </div>
+
+    
+
+
+  </body>
+</html>

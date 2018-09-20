@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="CSS Character Animation">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>CSS Character Animation</title>
+    <style type="text/css">
+        .wrap{  width:280px;
+    position:relative;
+    margin:20% auto; }
+    
+        .fadein 
+        {
+    text-transform:uppercase; font-size:35px; 
+    overflow:hidden;
+    height:40px;
+    font-family:Sans-Serif;
+    white-space: nowrap;
+    -webkit-animation: fadeani 3s ease-out 1;
+    -moz-animation: fadeani 3s ease-out 1;
+    animation: fadeani 3s ease-out 1;
+    animation-fill-mode: forwards;
+    font-weight:600;
+    }
+    
+    @-webkit-keyframes fadeani
+    {
+        0%{width:0px; opacity:0;}
+         90%{ opacity:0.6;}
+        
+        100%{width:280px; opacity:1;}
+        }
+    
+      @-moz-keyframes fadeani
+    {
+        0%{width:0px; opacity:0;}
+         90%{ opacity:0.6;}
+        
+        100%{width:280px; opacity:1;}
+        }
+    @keyframes fadeani
+    {
+        0%{width:0px; opacity:0;}
+         90%{ opacity:0.6;}
+        
+        100%{width:280px; opacity:1;}
+        }
+    </style>
+
+  </head>
+  
+
+    
+    
+
+  <body>
+
+    
+
+
+      <div class="wrap">
+      <p class="fadein">SLOW FADE ON</p>
+      </div>
+
+    
+
+
+  </body>
+</html>
